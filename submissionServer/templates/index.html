@@ -1,0 +1,9 @@
+{% if submissions %}
+    <ul>
+    {% for sub in submissions %}
+        <li>Week 1 by {{ sub.name }}: {{ sub.link }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No submissions are available.</p>
+{% endif %}
