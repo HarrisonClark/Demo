@@ -8,3 +8,5 @@ def index(request):
     submissions = Submission.objects.order_by('date')[:5]
     context = {"submissions":submissions}
     return render(request, "index.html", context)
+
+#made a change
